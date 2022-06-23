@@ -12,8 +12,8 @@ public final class StringSchema extends BaseSchema {
         return this;
     }
 
-    public StringSchema contains(String substr) {
-        addCheck(x -> x.toString().contains(substr));
+    public StringSchema contains(String substring) {
+        addCheck(x -> x.toString().contains(substring));
         return this;
     }
 }

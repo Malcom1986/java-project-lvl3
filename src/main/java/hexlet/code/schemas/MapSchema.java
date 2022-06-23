@@ -18,4 +18,17 @@ public final class MapSchema extends BaseSchema {
         return this;
     }
 
+    public MapSchema shape(Map<String, BaseSchema> schemas) {
+        addCheck(x -> schemas
+                        .entrySet()
+                        .stream()
+                        .allMatch(entry -> {
+                            var key = entry.getKey();
+                            var sc = entry.getValue();
+                            return sc.isValid(((Map) x).get(key));
+                        })
+        );
+        return this;
+    }
+
 }
