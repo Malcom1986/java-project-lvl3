@@ -32,6 +32,11 @@ public class AppTest {
         schema.contains("good");
         assertThat(schema.isValid("good")).isFalse();
         assertThat(schema.isValid("some good string")).isTrue();
+
+        schema.minLength(12);
+
+        assertThat(schema.isValid("some good")).isFalse();
+        assertThat(schema.isValid("some good string")).isTrue();
     }
 
     @Test

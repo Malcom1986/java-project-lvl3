@@ -16,4 +16,9 @@ public final class StringSchema extends BaseSchema {
         addCheck(x -> x.toString().contains(substring));
         return this;
     }
+
+    public StringSchema minLength(int minLength) {
+        addCheck(x -> x.toString().length() >= minLength);
+        return this;
+    }
 }
