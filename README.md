@@ -2,7 +2,7 @@
 [![Actions Status](https://github.com/Malcom1986/java-project-lvl3/workflows/hexlet-check/badge.svg)](https://github.com/Malcom1986/java-project-lvl3/actions)
 [![Maintainability](https://api.codeclimate.com/v1/badges/b414ad09d5a6f9fec44f/maintainability)](https://codeclimate.com/github/Malcom1986/java-project-lvl3/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/b414ad09d5a6f9fec44f/test_coverage)](https://codeclimate.com/github/Malcom1986/java-project-lvl3/test_coverage)
-
+[![Java CI](https://github.com/Malcom1986/java-project-lvl3/actions/workflows/java%20ci.yml/badge.svg)](https://github.com/Malcom1986/java-project-lvl3/actions/workflows/java%20ci.yml)
 # Валидатор данных
 
 Валидатор данных – библиотека, с помощью которой можно проверять корректность любых данных.
